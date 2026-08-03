@@ -9,6 +9,7 @@ class Solution:
             
             for ch in t:
                 if ch not in count or count[ch] == 0:
-                return ch
+                    return ch
+                
             count[ch] -= 1
                 
