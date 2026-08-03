@@ -8,7 +8,7 @@ class Solution:
                     count[ch] = 1
             
             for ch in t:
-                if ch not in countor count[ch] == 0:
+                if ch not in count or count[ch] == 0:
                 return ch
             count[ch] -= 1
                 
