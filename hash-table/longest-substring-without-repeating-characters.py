@@ -5,8 +5,8 @@ class Solution:
         chars = set()
         slen = 0
 
-        for i in range(len(s)):
-            if s[i] not in chars:
+        while r<len(s):
+            if s[r] not in chars:
                 chars.add(s[r])
                 if slen< r-l+1:
                     slen = r-l+1
