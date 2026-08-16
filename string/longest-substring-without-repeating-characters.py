@@ -8,8 +8,7 @@ class Solution:
         while r<len(s):
             if s[r] not in chars:
                 chars.add(s[r])
-                if slen< r-l+1:
-                    slen = r-l+1
+                slen = max(slen,r-l+1)
                 r +=1
             else:
                 chars.remove(s[l])
