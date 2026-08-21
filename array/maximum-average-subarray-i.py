@@ -7,8 +7,9 @@ class Solution:
         while r<k:
             msum += nums[r]
             r+=1
+        nsum = msum
         while r<len(nums):
-            nsum = (msum - nums[l]) + nums[r]
+            nsum = (nsum - nums[l]) + nums[r]
             msum = max(nsum,msum)
             r+=1
             l+=1
