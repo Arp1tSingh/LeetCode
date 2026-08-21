@@ -9,11 +9,11 @@ class Solution:
                 continue
             elif nums[r] == 0 and count >0:
                 count-=1
-                
+                mlen = max(r-l,mlen)
             elif nums[r] == 0 and count==0:
-                clen = r-l
-                mlen = max(clen,mlen)
+                mlen = max(r-l,mlen)
                 while nums[l] != 0:
                     l+=1
                 l+=1
+                
         return mlen
