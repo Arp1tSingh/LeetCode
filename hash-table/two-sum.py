@@ -1,11 +1,9 @@
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        seen = {}
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
+        hm = {}
         for i in range(len(nums)):
             comp = target - nums[i]
-            if comp in seen:
-                return [seen[comp],i]
+            if comp in hm:
+                return [i,hm[comp]]
             else:
-                seen[nums[i]] = i
-             
-        
+                hm[nums[i]] = i
